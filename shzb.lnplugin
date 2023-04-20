@@ -2,9 +2,9 @@
 #shzb
 ^https?:\/\/gitee\.com\/ReactJSTeams\/next.js\/raw\/master\/examples\/nested-components\/.gitignore url reject-200
 
-http-response ^https?:\/\/.*\.liuniukeji\.(heshuangde|cdwksjx)\.com\/index\.php\/App\/(Account\/Login|User\/Info|Index\/Update|Host\/Info).*$ script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/shzb.js, requires-body=true, tag=shzb
+http-response ^https?:\/\/.*\.liuniukeji\.(heshuangde|cdwksjx)\.com\/index\.php\/App\/(Account\/Login|User\/Info|Index\/Update|Host\/Info).*$ script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/shzb.js, requires-body=true
 
-http-response ^https?:\/\/.*\.liuniukeji\.(heshuangde|cdwksjx)\.com\/index\.php\/App\/User\/Info.*$ script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/shtk.js, requires-body=true, tag=shzb1
+http-request ^https?:\/\/.*\.liuniukeji\.(heshuangde|cdwksjx)\.com\/index\.php\/App\/User\/Info.*$ script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/shtk.js, requires-body=true
 
 [mitm]
 hostname = *cdwksjx*,*heshuangde*,gitee.com
