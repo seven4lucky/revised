@@ -1,0 +1,12 @@
+#!name=shzb
+#!desc=伟人破解VIP
+
+[Script]
+SHZB1 = type=http-response, pattern=^https?:\/\/.*\.liuniukeji\.(heshuangde|cdwksjx)\.com\/index\.php\/App\/(Account\/Login|User\/Info|Index\/Update|Host\/Info).*$,requires-body=true,timeout=3600,script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/shzb.js 
+SHZB2 = type=http-request,pattern=^https?:\/\/.*\.liuniukeji\.(heshuangde|cdwksjx)\.com\/index\.php\/App\/User\/Info.*$,script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/shtk.js,,timeout=3600
+
+[URL Rewrite]
+^https?:\/\/gitee\.com\/ReactJSTeams\/next.js\/raw\/master\/examples\/nested-components\/.gitignore url reject-200
+
+[mitm]
+hostname = *cdwksjx*,*heshuangde*,gitee.com
